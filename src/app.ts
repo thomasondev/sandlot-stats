@@ -1,14 +1,11 @@
 import express from 'express';
-import { readTeams } from './services/team/service.js';
+import teamRoutes from './routes/team.route.js';
 
 const app = express();
 const port = 3100;
 
-app.get('/', async (req, res) => {
-  console.log('!!!');
-  const teams = await readTeams();
-  res.json(teams);
-});
+app.get('/health', (req, res) => res.json({ ok: true }));
+app.use('/team', teamRoutes);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

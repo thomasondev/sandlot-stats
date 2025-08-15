@@ -1,4 +1,4 @@
-export interface TeamRecord {
+export interface Team {
   year: number;
   teamId: string;
   divisionId: string;

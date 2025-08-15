@@ -1,0 +1,26 @@
+{
+  "name": "parse-baseball-database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --include './src/**/*' ./src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node24": "^24.0.1",
+    "@types/node": "^24.1.0",
+    "@types/ramda": "^0.31.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "csv-parse": "^6.1.0",
+    "express": "^5.1.0",
+    "zod": "^4.0.14"
+  }
+}
